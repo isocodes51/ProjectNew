@@ -1,4 +1,4 @@
-services:
+﻿services:
   # ---- Backend: .NET 10 Web API ----
   backend:
     build:
@@ -9,7 +9,6 @@ services:
     ports:
       - "8080:8080"
     environment:
-      # API anahtarı: .env dosyasından gelir (compose yanında .env olmalı)
       WEATHERAPI_KEY: ${WEATHERAPI_KEY:-}
       ASPNETCORE_ENVIRONMENT: Production
     healthcheck:
@@ -29,7 +28,8 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_started
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost/"]
       interval: 30s
