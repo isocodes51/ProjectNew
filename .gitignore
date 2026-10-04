@@ -1,0 +1,14 @@
+# API anahtarı - ASLA commit etme!
+weatherapi.key
+
+# .NET
+bin/
+obj/
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vs/
+.idea/
