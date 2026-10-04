@@ -1,5 +1,6 @@
 # API anahtarı - ASLA commit etme!
 weatherapi.key
+.env
 
 # .NET
 bin/

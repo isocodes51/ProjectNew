@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Secrets - ASLA imaja girmez
+weatherapi.key
+.env
+.env.*
+
+# .NET artifacts
+**/bin/
+**/obj/
+
+# Node artifacts
+**/node_modules/
+**/dist/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Docs
+README.md
+scripts/
+*.bat
