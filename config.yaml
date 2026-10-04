@@ -1,0 +1,76 @@
+﻿name: EVREN AI AsistanÄ±
+version: 1.0.0
+schema: v1
+
+models:
+  - name: MiMo-V2.6-Pro
+    provider: openai
+    model: mimo-v2.6-pro
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    capabilities: [tool_use, image_input]
+    defaultCompletionOptions:
+      contextLength: 1000000
+      maxTokens: 16000
+      temperature: 0.3
+
+  - name: GLM-5.3
+    provider: openai
+    model: glm-5.3
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    capabilities: [tool_use]
+    defaultCompletionOptions:
+      temperature: 0.3
+
+  - name: DeepSeek-V4.1-Flash
+    provider: openai
+    model: deepseek-v4.1-flash
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    capabilities: [tool_use]
+    defaultCompletionOptions:
+      contextLength: 1000000
+      maxTokens: 16000
+      temperature: 0.3
+
+  - name: DeepSeek-V4-Flash
+    provider: openai
+    model: deepseek-v4-flash
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    capabilities: [tool_use]
+    defaultCompletionOptions:
+      contextLength: 1000000
+      maxTokens: 16000
+      temperature: 0.3
+
+  - name: Qwen3.8-Flash-Next
+    provider: openai
+    model: qwen3.8-flash-next
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    capabilities: [tool_use]
+    defaultCompletionOptions:
+      temperature: 0.3
+
+  - name: Gemma-4-31B
+    provider: openai
+    model: gemma-4-31b
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [chat, edit, apply, summarize]
+    defaultCompletionOptions:
+      temperature: 0.3
+
+  - name: Qwen3-Embedding-8B
+    provider: openai
+    model: qwen3-embedding-8b
+    apiBase: https://evren-llmapi.ssyz.org.tr/v1
+    apiKey: "BURAYA_API_ANAHTARINIZI_YAZIN"
+    roles: [embed]
